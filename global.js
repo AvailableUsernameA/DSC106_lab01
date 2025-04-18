@@ -42,14 +42,15 @@ document.body.insertAdjacentHTML(
   `
   <label class="color-scheme">
       Theme:
-      <select>
+      <select id="set-color">
         <option value='light dark'>Automatic</option>
         <option value='light'>Light</option>
         <option value='dark'>Dark</option>
       </select>
   </label>`,
 );
-let select = document.querySelector(select)
+let select = document.querySelector('select#set-color');
+
 select.addEventListener('input', function (event) {
   console.log('color scheme changed to', event.target.value);
 });
