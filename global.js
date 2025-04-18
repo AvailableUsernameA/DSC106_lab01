@@ -61,3 +61,19 @@ select.addEventListener('input', function (event) {
   document.documentElement.style.setProperty('color-scheme', event.target.value);
   localStorage.colorScheme = event.target.value;
 });
+
+let emailForm = document.querySelector('form[action="mailto:huc014@ucsd.edu"]');
+emailForm?.addEventListener('submit', function (event) {
+  event.preventDefault();
+  let data = new FormData(emailForm);
+  let emailurl = emailForm.action+'?';
+  for (let [name, value] of data) {
+    // TODO build URL parameters here
+    emailurl = emailurl+name+'='+encodeURIComponent(value)+'&';
+    console.log(name, value);
+  }
+  emailurl = emailurl.slice(0, -1);
+  emailurl = emailurl;
+  console.log(emailurl);
+  location.href = emailurl;
+})
