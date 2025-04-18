@@ -115,3 +115,8 @@ label.color-scheme {
   right: 1rem;
   font-size: 80%;
 }/*you can just add select to your existing input, textarea, button rule about that from Lab 2*/
+
+select {
+  font-family: inherit;
+  font-size: inherit;
+}
