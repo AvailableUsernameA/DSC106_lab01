@@ -73,7 +73,6 @@ emailForm?.addEventListener('submit', function (event) {
     console.log(name, value);
   }
   emailurl = emailurl.slice(0, -1);
-  emailurl = emailurl;
   console.log(emailurl);
   location.href = emailurl;
 })
