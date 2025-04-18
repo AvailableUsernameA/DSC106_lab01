@@ -19,7 +19,7 @@ ul.links {
 }
 
 nav {
-  --border-color: oklch(60% 50% 200 / 40%);
+  --border-color: oklch(50% 10% 200 / 20%);
   display: flex;
   margin-bottom: auto;
   border-bottom-width: 1px;
