@@ -119,3 +119,22 @@ label.color-scheme {
 label select {
   font: inherit;
 }
+
+div#profile-stats dl{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1rem;
+}
+
+div#profile-stats dl dt{
+  grid-row: 1;
+  padding: 0.5rem;
+  color: oklch(0.68 0.0321 207);
+}
+
+div#profile-stats dl dd {
+  grid-row: 2;
+  margin: 0;
+  padding: 0.5rem;
+  font-size: large;
+}
