@@ -138,3 +138,75 @@ div#profile-stats dl dd {
   padding: 0.5rem;
   font-size: large;
 }
+
+small.project-year {
+  font-family: Baskerville;
+  font-variant-numeric: oldstyle-nums;
+  color: grey;
+  font-size: large;
+}
+
+#projects-plot {
+  max-width: 20em;
+  margin-block: 2em;
+
+  overflow: visible;
+}
+
+span.swatch{
+  width: 1em;
+  aspect-ratio: 1 / 1;
+  background-color: var(--color);
+  display: inline-block;
+  border-radius: 30% 30% 30% 30%;
+}
+
+.legend {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(9em, 1fr));
+  padding: 1em;
+  margin: 1em;
+  border: 1px solid oklch(50% 10% 200 / 40%);
+  flex: 1
+}
+
+.legend li {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+
+div.container {
+  display: flex;
+}
+
+&:has(path:hover) {
+  path:not(:hover) {
+    opacity: 0.5;
+  }
+}
+
+path {
+  transition: 300ms;
+}
+
+.selected {
+  /* --color: oklch(60% 45% 0) !important; */
+  --color: oklch(0.55 0.2417 25.41) !important;
+
+  &:is(path) {
+    fill: var(--color);
+  }
+}
+
+path {
+  cursor: pointer;
+}
+
+.searchBar {
+  width: 100%;
+  max-width: 100%;
+  padding: 0.5em;
+  font-size: 1rem;
+  margin-bottom: 1em;
+}
