@@ -45,6 +45,7 @@ function renderPieChart(projectsGiven) {
   newLegend.selectAll('li').remove();
   // update paths and legends, refer to steps 1.4 and 2.2
   let colors = d3.scaleOrdinal(d3.schemeTableau10);
+  console.log(selectedIndex);///
   newArcs.forEach((arc, idx) => {
          d3.select('svg')
            .append('path')
