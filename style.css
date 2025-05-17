@@ -321,3 +321,9 @@ circle.selected {
   min-height: 3em;
   font-size: 20px;
 }
+
+article img {
+  max-width: 100%;
+  width: 300px;
+  height: auto;
+}

@@ -72,9 +72,10 @@
         "description": "Molestias, laudantium! Sapiente laboriosam dicta dolorem tempore voluptate! Explicabo blanditiis quia quibusdam id totam architecto pariatur vitae, rerum reprehenderit ut consequatur molestias beatae repellat rem at. Ab officiis temporibus unde?"
     },
     {
-        "title": "Bikewatching",
+        "title": "Bike Watching",
         "year": "2025",
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Molestias, laudantium! Sapiente laboriosam dicta dolorem tempore voluptate! Explicabo blanditiis quia quibusdam id totam architecto pariatur vitae, rerum reprehenderit ut consequatur molestias beatae repellat rem at. Ab officiis temporibus unde?"
+        "image": "https://raw.githubusercontent.com/AvailableUsernameA/DSC106_lab01/main/lib/bikeWatching.png",
+        "url":"https://availableusernamea.github.io/bikewatching/",
+        "description": "A map visualization of bike traffic in the Boston area during different time of the day"
     }
 ]
